@@ -1,0 +1,24 @@
+# Dependencies & build
+node_modules/
+dist/
+build/
+.vite/
+coverage/
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# Hardhat / Solidity
+contracts/cache/
+contracts/artifacts/
+contracts/typechain-types/
+contracts/ignition/deployments/*/build-info/
+
+# Logs & OS
+*.log
+.DS_Store
+.idea/
+.vscode/
+*.swp

@@ -1,0 +1,10 @@
+{
+  "name": "private-juice",
+  "private": true,
+  "scripts": {
+    "compile": "npm --prefix contracts run compile",
+    "deploy:sepolia": "npm --prefix contracts run deploy:sepolia",
+    "dev": "npm --prefix web run dev",
+    "build:web": "npm --prefix web run build"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "network": "sepolia",
+  "chainId": 11155111,
+  "privateJuicebox": "0xc37a6b7206944b0d33732972fc68c047e12bcce0",
+  "juiceTerminal": "0x55FF1D8093166c1fF9664efd613D8C543b95feFc",
+  "juiceTokenStore": "0x25fdda0eBD9e979b8c1657780045Cf87392a14E4",
+  "noxCompute": "0x24Ef36Ec5b626D7DCD09a98F3083c2758F0F77bF",
+  "deployer": "0x25b7a7d21ccf349fba8245209a25bbb36fbe4ffd",
+  "deployedAt": "2026-07-29T16:11:28.963Z"
+}
