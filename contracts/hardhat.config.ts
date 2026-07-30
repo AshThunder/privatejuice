@@ -1,10 +1,11 @@
 import "dotenv/config";
 import hardhatToolboxViemPlugin from "@nomicfoundation/hardhat-toolbox-viem";
+import hardhatVerify from "@nomicfoundation/hardhat-verify";
 import { configVariable, defineConfig } from "hardhat/config";
 import noxPlugin from "@iexec-nox/nox-hardhat-plugin";
 
 export default defineConfig({
-  plugins: [hardhatToolboxViemPlugin, noxPlugin],
+  plugins: [hardhatToolboxViemPlugin, hardhatVerify, noxPlugin],
   solidity: {
     version: "0.8.35",
     settings: {
@@ -21,6 +22,12 @@ export default defineConfig({
       chainType: "l1",
       url: configVariable("SEPOLIA_RPC_URL"),
       accounts: [configVariable("SEPOLIA_PRIVATE_KEY")],
+    },
+  },
+  verify: {
+    etherscan: {
+      // Single Etherscan API v2 key — set ETHERSCAN_API_KEY in contracts/.env
+      apiKey: process.env.ETHERSCAN_API_KEY ?? "",
     },
   },
 });

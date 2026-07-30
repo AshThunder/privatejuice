@@ -67,7 +67,7 @@ After deploy, copy `PrivateJuicebox` address into `web/.env` as `VITE_PRIVATE_JU
 
 | | |
 |--|--|
-| **PrivateJuicebox** | [`0xc37a6b7206944b0d33732972fc68c047e12bcce0`](https://sepolia.etherscan.io/address/0xc37a6b7206944b0d33732972fc68c047e12bcce0) |
+| **PrivateJuicebox** | [`0xc37a6b7206944b0d33732972fc68c047e12bcce0`](https://sepolia.etherscan.io/address/0xc37a6b7206944b0d33732972fc68c047e12bcce0#code) (verified) |
 | Deployer | `0x25b7a7d21ccf349fba8245209a25bbb36fbe4ffd` |
 | Juicebox terminal | `0x55FF1D8093166c1fF9664efd613D8C543b95feFc` |
 | Juicebox token store | `0x25fdda0eBD9e979b8c1657780045Cf87392a14E4` |
@@ -90,7 +90,11 @@ npm install
 npm run dev
 ```
 
-Flow in the UI: Connect → Fund → Pledge privately → Open settlement → Settle to Juicebox.
+Flow in the UI: Connect → Fund → Pledge privately → Open settlement → Settle to Juicebox → Claim credits.
+
+### Vercel
+
+Repo includes [`vercel.json`](vercel.json) so imports from the monorepo root build `web/`. In Vercel → **Settings → Environment Variables**, set `VITE_PRIVATE_JUICEBOX` and `VITE_SEPOLIA_RPC_URL`, then **Redeploy**. If you still get a 404, set **Root Directory** to `web` and redeploy.
 
 ## Hackathon deliverables checklist
 
