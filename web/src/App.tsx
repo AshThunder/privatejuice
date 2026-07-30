@@ -654,7 +654,7 @@ export default function App() {
                   <input
                     value={projectInput}
                     onChange={(e) => setProjectInput(e.target.value)}
-                    placeholder="42 or https://sepolia.juicebox.money/v2/p/42"
+                    placeholder="28 or https://sepolia.juicebox.money/v5/sep:28"
                   />
                 </label>
                 {projectId ? (
